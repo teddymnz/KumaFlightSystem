@@ -1,7 +1,7 @@
 /**
  * Kuma Flight System Project
  *
- * @file App.cpp
+ * @file app.cpp
  * @brief Application Management
  *
  * @author Teddy Marie Inez

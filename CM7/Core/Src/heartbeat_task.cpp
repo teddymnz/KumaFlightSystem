@@ -9,6 +9,7 @@
  */
 
 #include "heartbeat_task.hpp"
+#include "logger.hpp"
 
 
 extern "C" {
@@ -17,22 +18,22 @@ extern "C" {
 }
 
 static const osThreadAttr_t heartbeatTask_attributes = {
-    .name = "Heartbeat",
-    .stack_size = 256 * 4,
-    .priority = osPriorityLow,
+	.name = "Heartbeat",
+	.stack_size = 256 * 4,
+	.priority = osPriorityLow,
 };
 
 void HeartbeatTask::Start()
 {
-    osThreadNew(Run, nullptr, &heartbeatTask_attributes);
+	osThreadNew(Run, nullptr, &heartbeatTask_attributes);
 }
 
 void HeartbeatTask::Run(void *argument)
 {
-    while (true)
-    {
-        // TODO: Toggle LED
+	while (true)
+	{
+		Logger::Print(".");
 
-        osDelay(500);
-    }
+		osDelay(1000);
+	}
 }

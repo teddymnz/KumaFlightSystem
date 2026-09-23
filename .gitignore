@@ -2,6 +2,22 @@
 Debug/
 Release/
 
+# STM32CubeIDE
+.settings/
+*.launch
+
+# Generated binaries
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+
+# Misc
+*.su
+*.o
+*.d
+
 # IDE files
 .settings/
 *.launch

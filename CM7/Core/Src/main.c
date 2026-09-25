@@ -103,9 +103,9 @@ int main(void)
   /* MPU Configuration--------------------------------------------------------*/
   MPU_Config();
 
+/* USER CODE BEGIN Boot_Mode_Sequence_1 */
 // TODO:
 // Temporarily disable CM7/CM4 boot synchronization while developing the CM7 firmware only.
-/* USER CODE BEGIN Boot_Mode_Sequence_1 */
 //#if defined(DUAL_CORE_BOOT_SYNC_SEQUENCE)
 //  /* Wait until CPU2 boots and enters in stop mode or timeout*/
 //  timeout = 0xFFFF;
